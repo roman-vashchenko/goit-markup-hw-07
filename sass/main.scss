@@ -2,12 +2,15 @@
 @import './utils/animation';
 @import './base/reset';
 @import './base/common';
-@import './components/container';
-@import './components/section';
 @import './utils/hidden';
 @import './utils/active-page';
-@import './layout/page-header';
-@import './layout/page-footer';
+
+@import './components/container';
+@import './components/section';
+@import './components/modal';
+@import './components/page-header';
+@import './components/page-footer';
+
 @import './layout/hero';
 @import './layout/features';
 @import './layout/services';
