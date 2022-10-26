@@ -1,10 +1,15 @@
 @import './utils/variables';
 @import './utils/animation';
 @import './base/reset';
-@import './base/font';
+@import './base/common';
 @import './components/container';
 @import './components/section';
-@import './utils/visually-hidden';
+@import './utils/hidden';
 @import './utils/active-page';
 @import './layout/page-header';
+@import './layout/page-footer';
 @import './layout/hero';
+@import './layout/features';
+@import './layout/services';
+@import './layout/our-team';
+@import './layout/coustomers';
