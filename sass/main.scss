@@ -3,16 +3,16 @@
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
-@import './utils/active-page';
 
 @import './components/container';
 @import './components/section';
 @import './components/modal';
-@import './components/page-header';
-@import './components/page-footer';
 
+@import './layout/page-header';
+@import './layout/page-footer';
 @import './layout/hero';
 @import './layout/features';
 @import './layout/services';
 @import './layout/our-team';
 @import './layout/coustomers';
+@import './layout/portfolio'; 
