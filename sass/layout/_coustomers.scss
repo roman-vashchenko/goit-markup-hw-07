@@ -1,4 +1,4 @@
-.title-customers {
+.customers__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -10,17 +10,17 @@
   color: var(--title-text-color);
 }
 
-.list-coustomers {
+.customers__list {
   display: flex;
   gap: 30px;
 }
 
-.item-coustomers {
+.customers__item {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.coustomers-link {
+.coustomers__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -37,7 +37,7 @@
   }
 }
 
-.icon-coustomers-link {
+.coustomers__icon {
   fill: currentColor;
 }
 
