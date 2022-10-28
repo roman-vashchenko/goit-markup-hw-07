@@ -499,16 +499,6 @@ body {
   color: var(--secondary-color);
 }
 
-.footer__soc {
-  display: flex;
-  gap: 10px;
-}
-
-.soc__item {
-  width: 44px;
-  height: 44px;
-}
-
 .soc__link--whithe {
   width: 100%;
   height: 100%;
@@ -527,11 +517,11 @@ body {
   fill: var(--secondary-color);
 }
 
-.form-subscribe-wrap {
+.subscribe__wrapper {
   display: flex;
 }
 
-.form-subscribe input {
+.subscribe__field {
   width: 358px;
   margin-right: 12px;
   padding: 15px 16px;
@@ -542,37 +532,38 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
-.icon-send {
-  margin-left: 10px;
-  fill: var(--secondary-color);
+.subscribe__field::-moz-placeholder {
+  font-weight: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
-
-.form-subscribe::-moz-placeholder {
-  font-weight: 400;
+.subscribe__field:-ms-input-placeholder {
+  font-weight: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe__field::placeholder {
+  font-weight: 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-subscribe:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+.subscribe__join {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  color: var(--secondary-color);
 }
 
-.form-subscribe::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-subscribe-btn {
+.subscribe__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -589,6 +580,11 @@ body {
   color: var(--secondary-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: var(--secondary-color);
 }
 
 .hero {
@@ -761,7 +757,7 @@ body {
   color: var(--text-color);
 }
 
-.team__soc {
+.soc {
   display: flex;
   justify-content: center;
   align-items: center;
