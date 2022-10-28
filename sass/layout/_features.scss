@@ -1,4 +1,4 @@
-.icons {
+.features__wrapper {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -10,12 +10,12 @@
   border-radius: 4px;
 }
 
-.features-list {
+.features__list {
   display: flex;
   gap: 30px;
 }
 
-.features-title {
+.features__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -26,10 +26,8 @@
   color: var(--title-text-color);
 }
 
-.features-text {
+.features__text {
   width: 270px;
-
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include features-font (1.71, 0.03em);
   color: var(--text-color);
 }

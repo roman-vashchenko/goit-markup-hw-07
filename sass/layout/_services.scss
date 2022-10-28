@@ -3,7 +3,7 @@
   background: var(--secondary-color);
 }
 
-.services-title {
+.services__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -14,16 +14,16 @@
   color: var(--title-text-color);
 }
 
-.services-list {
+.services__list {
   display: flex;
   gap: 30px;
 }
 
-.services-list .item {
+.services__item {
   width: calc((100% - 60px) / 3);
 }
 
-.thumb-services {
+.services__wrapper {
   position: relative;
 }
 
