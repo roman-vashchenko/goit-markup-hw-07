@@ -68,14 +68,13 @@
   border-radius: 50%;
   color: var(--color-icon);
   transition: background-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+  }
 }
 
 .icon-link {
   fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
 }

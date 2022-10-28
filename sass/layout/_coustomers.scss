@@ -30,14 +30,14 @@
   border-radius: 4px;
   color: var(--color-icon);
   transition: border-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .icon-coustomers-link {
   fill: currentColor;
 }
 
-.coustomers-link:hover,
-.coustomers-link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}

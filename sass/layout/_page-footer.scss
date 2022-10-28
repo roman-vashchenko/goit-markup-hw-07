@@ -41,20 +41,15 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-time) var(--transition-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
+
 .footer-mail {
   display: block;
   margin-bottom: 9px;
-}
-
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--accent-color);
 }
 
 .footer-text-links {
@@ -86,15 +81,14 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-time) var(--transition-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .icon-footer-link {
   fill: var(--secondary-color);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
 }
 
 .form-subscribe-wrap {

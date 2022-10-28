@@ -24,13 +24,12 @@
   color: var(--title-text-color);
   background: #f5f4fa;
   transition: color var(--transition-time) var(--transition-function), background-color var(--transition-time) var(--transition-function), box-shadow var(--transition-time) var(--transition-function);
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-  color: var(--secondary-color);
-  background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .project-list {
@@ -40,13 +39,13 @@
 }
 
 .project-link {
-  transition: box-shadow var(--transition-time) var(--transition-function);
-}
-
-.project-link:hover,
-.project-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   display: block;
+  transition: box-shadow var(--transition-time) var(--transition-function);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    display: block;
+  }
 }
 
 .project-thumb {
@@ -70,11 +69,10 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--transition-time) var(--transition-function);
-}
-
-.project-link:hover .project-animation-text,
-.project-link:focus .project-animation-text {
-  transform: translateY(0);
+  .project-link:hover &,
+  .project-link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .description {

@@ -62,11 +62,10 @@
 
   display: block;
   transition: color var(--transition-time) var(--transition-function);
-}
-
-.header-item-link:hover,
-.header-item-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-item-mail,
@@ -79,6 +78,11 @@
   color: var(--text-color);
 
   transition: color var(--transition-time) var(--transition-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
 .icon-header-contats {
@@ -101,20 +105,21 @@
 
 .current {
   color: var(--accent-color);
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: -1px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    animation: currentBorder var(--transition-time) var(--transition-function);
+  }
 }
 
-.current::after {
-  content: "";
 
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  margin: -1px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  animation: currentBorder var(--transition-time) var(--transition-function);
-}

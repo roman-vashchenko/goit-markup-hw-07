@@ -407,9 +407,7 @@ body {
   display: block;
   transition: color var(--transition-time) var(--transition-function);
 }
-
-.header-item-link:hover,
-.header-item-link:focus {
+.header-item-link:hover, .header-item-link:focus {
   color: var(--accent-color);
 }
 
@@ -422,6 +420,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   transition: color var(--transition-time) var(--transition-function);
+}
+.header-item-mail:hover, .header-item-mail:focus,
+.header-item-tel:hover,
+.header-item-tel:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .icon-header-contats {
@@ -445,7 +449,6 @@ body {
 .current {
   color: var(--accent-color);
 }
-
 .current::after {
   content: "";
   position: absolute;
@@ -503,20 +506,15 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-time) var(--transition-function);
 }
+.footer-mail:hover, .footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
 
 .footer-mail {
   display: block;
   margin-bottom: 9px;
-}
-
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--accent-color);
 }
 
 .footer-text-links {
@@ -548,14 +546,12 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-time) var(--transition-function);
 }
+.footer-soc-link:hover, .footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
 
 .icon-footer-link {
   fill: var(--secondary-color);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
 }
 
 .form-subscribe-wrap {
@@ -664,9 +660,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition-time) var(--transition-function);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: #188ce8;
 }
 
@@ -816,15 +810,13 @@ body {
   color: var(--color-icon);
   transition: background-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
 }
+.team-soc-link:hover, .team-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
 
 .icon-link {
   fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
 }
 
 .title-customers {
@@ -858,15 +850,13 @@ body {
   color: var(--color-icon);
   transition: border-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
 }
+.coustomers-link:hover, .coustomers-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
 
 .icon-coustomers-link {
   fill: currentColor;
-}
-
-.coustomers-link:hover,
-.coustomers-link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
 }
 
 .filter {
@@ -895,9 +885,7 @@ body {
   background: #f5f4fa;
   transition: color var(--transition-time) var(--transition-function), background-color var(--transition-time) var(--transition-function), box-shadow var(--transition-time) var(--transition-function);
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   color: var(--secondary-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -910,11 +898,10 @@ body {
 }
 
 .project-link {
+  display: block;
   transition: box-shadow var(--transition-time) var(--transition-function);
 }
-
-.project-link:hover,
-.project-link:focus {
+.project-link:hover, .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   display: block;
 }
@@ -939,9 +926,7 @@ body {
   transform: translateY(100%);
   transition: transform var(--transition-time) var(--transition-function);
 }
-
-.project-link:hover .project-animation-text,
-.project-link:focus .project-animation-text {
+.project-link:hover .project-animation-text, .project-link:focus .project-animation-text {
   transform: translateY(0);
 }
 
