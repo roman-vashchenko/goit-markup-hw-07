@@ -347,45 +347,17 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.site-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-list {
-  display: flex;
-  align-items: center;
-}
-
-.header-item-link {
-  position: relative;
-}
-
-.header-container .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header-list .item + .item {
-  margin-left: 50px;
-}
-
-.header-contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.header-contacts .item + .item {
-  margin-left: 50px;
-}
-
-.logo-link {
+.logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -394,12 +366,20 @@ body {
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-
-.logo-link span {
+.logo span {
   color: var(--accent-color);
 }
 
-.header-item-link {
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu__link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -407,12 +387,19 @@ body {
   display: block;
   transition: color var(--transition-time) var(--transition-function);
 }
-.header-item-link:hover, .header-item-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.header-item-mail,
-.header-item-tel {
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.contact__mail,
+.contact__tel {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -421,29 +408,17 @@ body {
   color: var(--text-color);
   transition: color var(--transition-time) var(--transition-function);
 }
-.header-item-mail:hover, .header-item-mail:focus,
-.header-item-tel:hover,
-.header-item-tel:focus {
+.contact__mail:hover, .contact__mail:focus,
+.contact__tel:hover,
+.contact__tel:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.icon-header-contats {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
   transition: fill var(--transition-time) var(--transition-function);
-}
-
-.header-item-mail:hover,
-.header-item-mail:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.header-item-tel:hover,
-.header-item-tel:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .current {
