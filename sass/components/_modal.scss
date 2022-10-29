@@ -156,15 +156,6 @@
   position: absolute;
 }
 
-.form-contract-condition label {
-  display: inline-block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-
 .border-icon {
   position: relative;
   top: 2px;
@@ -177,31 +168,27 @@
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
   transition: background-color var(--transition-time) var(--transition-function), border-color var(--transition-time) var(--transition-function);
+  .checkbox:checked + label & {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  .checkbox:checked:focus + label & {
+    outline: transparent;
+  }
+  .checkbox:focus + label & {
+    outline: 1px solid var(--title-text-color);
+  }
 }
 
 .icon-check {
   opacity: 0;
   transition: opacity var(--transition-time) var(--transition-function);
+  .checkbox:checked + label & {
+    opacity: 1;
+  }
 }
 
-.checkbox:checked + label .border-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.checkbox:checked + label .icon-check {
-  opacity: 1;
-}
-
-.checkbox:focus + label .border-icon {
-  outline: 1px solid var(--title-text-color);
-}
-
-.checkbox:checked:focus + label .border-icon {
-  outline: transparent;
-}
-
-.form-contract-condition .contract {
+.contract {
   text-decoration: underline;
   color: var(--accent-color);
 }
@@ -224,10 +211,9 @@
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition-time) var(--transition-function), filter var(--transition-time) var(--transition-function);
-}
-
-.btn-submit-form:hover,
-.btn-submit-form:focus {
-  background-color: #188ce8;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
