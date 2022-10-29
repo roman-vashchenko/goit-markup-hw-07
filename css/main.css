@@ -150,9 +150,7 @@ body {
   background-color: var(--secondary-color);
   transition: fill var(--transition-time) var(--transition-function);
 }
-
-.btn-modal-close:hover,
-.btn-modal-close:focus {
+.btn-modal-close:hover, .btn-modal-close:focus {
   fill: var(--accent-color);
 }
 
@@ -176,7 +174,6 @@ body {
   flex-direction: column;
   margin-bottom: 10px;
 }
-
 .form-field label {
   margin-bottom: 4px;
   font-weight: 400;
@@ -185,14 +182,6 @@ body {
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
-
-.icon-form {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transition: fill var(--transition-time) var(--transition-function);
-}
-
 .form-field input {
   width: 100%;
   margin: 0;
@@ -202,11 +191,16 @@ body {
   outline: transparent;
   transition: border-color var(--transition-time) var(--transition-function);
 }
-
-.form-field:focus-within,
-.form-field input:focus {
+.form-field:focus-within, .form-field input:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.icon-form {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transition: fill var(--transition-time) var(--transition-function);
 }
 
 .form-comment {
@@ -214,7 +208,6 @@ body {
   flex-direction: column;
   margin-bottom: 20px;
 }
-
 .form-comment label {
   margin-bottom: 4px;
   font-weight: 400;
@@ -223,7 +216,6 @@ body {
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
-
 .form-comment textarea {
   width: 100%;
   resize: none;
@@ -234,11 +226,9 @@ body {
   outline: transparent;
   transition: border-color var(--transition-time) var(--transition-function);
 }
-
 .form-comment textarea:focus {
   border-color: var(--accent-color);
 }
-
 .form-comment textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -246,7 +236,6 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-comment textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -254,7 +243,6 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-comment textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
