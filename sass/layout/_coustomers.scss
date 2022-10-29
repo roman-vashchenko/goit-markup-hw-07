@@ -1,7 +1,7 @@
 .customers__title {
   @extend %title;
   margin-bottom: 50px;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .customers__list {
@@ -20,14 +20,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--color-icon);
+  border: 1px solid $color-icon;
   border-radius: 4px;
-  color: var(--color-icon);
-  transition: border-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
+  color: $color-icon;
+  transition: border-color $transition-time $transition-function, color $transition-time $transition-function;
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    border-color: $accent-color;
+    color: $accent-color;
   }
 }
 

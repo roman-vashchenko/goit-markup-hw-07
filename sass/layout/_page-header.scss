@@ -1,5 +1,5 @@
 .header {
-  background: var(--secondary-color);
+  background: $secondary-color;
   border-bottom: 1px solid #ececec;
 }
 
@@ -22,7 +22,7 @@
   letter-spacing: 0.03em;
   margin-right: 93px;
   & span {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -41,13 +41,13 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   display: block;
-  transition: color var(--transition-time) var(--transition-function);
+  transition: color $transition-time $transition-function;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -65,24 +65,24 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: $text-color;
 
-  transition: color var(--transition-time) var(--transition-function);
+  transition: color $transition-time $transition-function;
   &:hover,
   &:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: $accent-color;
+    fill: $accent-color;
   }
 }
 
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
-  transition: fill var(--transition-time) var(--transition-function);
+  transition: fill $transition-time $transition-function;
 }
 
 .current {
-  color: var(--accent-color);
+  color: $accent-color;
   &::after {
     content: "";
 
@@ -94,8 +94,8 @@
     width: 100%;
     height: 4px;
     margin: -1px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 2px;
-    animation: currentBorder var(--transition-time) var(--transition-function);
+    animation: currentBorder $transition-time $transition-function;
   }
 }

@@ -1,14 +1,3 @@
-:root {
-  --text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --secondary-color: #ffffff;
-  --color-icon: #afb1b8;
-  --background-color: #f5f4fa;
-  --transition-time: 250ms;
-  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 @-webkit-keyframes currentBorder {
   0% {
     transform: scaleX(0);
@@ -17,7 +6,6 @@
     transform: scaleX(1);
   }
 }
-
 @keyframes currentBorder {
   0% {
     transform: scaleX(0);
@@ -109,7 +97,7 @@ body {
   height: 100%;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-time) var(--transition-function), visibility var(--transition-time) var(--transition-function);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -127,9 +115,9 @@ body {
   min-height: 581px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-time) var(--transition-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -147,11 +135,11 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--secondary-color);
-  transition: fill var(--transition-time) var(--transition-function);
+  background-color: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-modal-close:hover, .btn-modal-close:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .your-data-form {
@@ -165,7 +153,7 @@ body {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .form-field {
@@ -180,7 +168,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: #757575;
 }
 .form-field input {
   width: 100%;
@@ -189,18 +177,18 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
-  transition: border-color var(--transition-time) var(--transition-function);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field:focus-within, .form-field input:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
 .icon-form {
   position: absolute;
   top: 50%;
   left: 15px;
-  transition: fill var(--transition-time) var(--transition-function);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-comment {
@@ -214,7 +202,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: #757575;
 }
 .form-comment textarea {
   width: 100%;
@@ -227,7 +215,7 @@ body {
   transition: border-color var(--transition-time) var(--transition-function);
 }
 .form-comment textarea:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 .form-comment textarea::-moz-placeholder {
   font-weight: 400;
@@ -272,24 +260,24 @@ body {
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  border: 1px solid var(--title-text-color);
+  border: 1px solid #212121;
   border-radius: 2px;
-  transition: background-color var(--transition-time) var(--transition-function), border-color var(--transition-time) var(--transition-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + label .border-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: #2196f3;
+  border-color: #2196f3;
 }
 .checkbox:checked:focus + label .border-icon {
   outline: transparent;
 }
 .checkbox:focus + label .border-icon {
-  outline: 1px solid var(--title-text-color);
+  outline: 1px solid #212121;
 }
 
 .icon-check {
   opacity: 0;
-  transition: opacity var(--transition-time) var(--transition-function);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + label .icon-check {
   opacity: 1;
@@ -297,7 +285,7 @@ body {
 
 .contract {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .btn-submit-form {
@@ -313,10 +301,10 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--transition-time) var(--transition-function), filter var(--transition-time) var(--transition-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-submit-form:hover, .btn-submit-form:focus {
   background-color: #188ce8;
@@ -324,7 +312,7 @@ body {
 }
 
 .header {
-  background: var(--secondary-color);
+  background: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
@@ -348,7 +336,7 @@ body {
   margin-right: 93px;
 }
 .logo span {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .menu {
@@ -364,12 +352,12 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: #212121;
   display: block;
-  transition: color var(--transition-time) var(--transition-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__link:hover, .menu__link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .contact {
@@ -386,24 +374,24 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
-  transition: color var(--transition-time) var(--transition-function);
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact__mail:hover, .contact__mail:focus,
 .contact__tel:hover,
 .contact__tel:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
-  transition: fill var(--transition-time) var(--transition-function);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 .current::after {
   content: "";
@@ -414,10 +402,10 @@ body {
   width: 100%;
   height: 4px;
   margin: -1px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border-radius: 2px;
-  -webkit-animation: currentBorder var(--transition-time) var(--transition-function);
-          animation: currentBorder var(--transition-time) var(--transition-function);
+  -webkit-animation: currentBorder 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          animation: currentBorder 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -441,7 +429,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .hero__btn {
@@ -457,10 +445,10 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--transition-time) var(--transition-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
@@ -473,7 +461,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
@@ -489,24 +477,24 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .features__text {
   width: 270px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .services {
   padding-bottom: 94px;
-  background: var(--secondary-color);
+  background: #ffffff;
 }
 
 .services__title {
   margin-bottom: 50px;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .services__list {
@@ -534,17 +522,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
-  background: var(--background-color);
+  background: #f5f4fa;
 }
 
 .team__title {
   margin-bottom: 50px;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .team__list {
@@ -569,7 +557,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .team__position {
@@ -577,7 +565,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .soc {
@@ -599,12 +587,12 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--color-icon);
-  transition: background-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc__link:hover, .soc__link:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .soc__icon {
@@ -613,7 +601,7 @@ body {
 
 .customers__title {
   margin-bottom: 50px;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .customers__list {
@@ -632,14 +620,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--color-icon);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--color-icon);
-  transition: border-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
+  color: #afb1b8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .coustomers__link:hover, .coustomers__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: #2196f3;
+  color: #2196f3;
 }
 
 .coustomers__icon {
@@ -647,7 +635,7 @@ body {
 }
 
 .filter {
-  background: var(--secondary-color);
+  background: #ffffff;
 }
 
 .filter-list {
@@ -670,11 +658,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
-  transition: color var(--transition-time) var(--transition-function), background-color var(--transition-time) var(--transition-function), box-shadow var(--transition-time) var(--transition-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover, .filter-btn:focus {
-  color: var(--secondary-color);
-  background: var(--accent-color);
+  color: #ffffff;
+  background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -686,7 +674,7 @@ body {
 
 .project-link {
   display: block;
-  transition: box-shadow var(--transition-time) var(--transition-function);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover, .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -708,10 +696,10 @@ body {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform var(--transition-time) var(--transition-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover .project-animation-text, .project-link:focus .project-animation-text {
   transform: translateY(0);
@@ -728,7 +716,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .project-text {
@@ -736,7 +724,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .footer {
@@ -756,12 +744,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: #ffffff;
   display: block;
   margin-bottom: 20px;
 }
 .footer__logo span {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer__location {
@@ -769,7 +757,7 @@ body {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .footer__item {
@@ -782,12 +770,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color var(--transition-time) var(--transition-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__mail:hover, .footer__mail:focus,
 .footer__tel:hover,
 .footer__tel:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer__join {
@@ -796,7 +784,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .soc__link--whithe {
@@ -807,14 +795,14 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--transition-time) var(--transition-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc__link--whithe:hover, .soc__link--whithe:focus {
-  background: var(--accent-color);
+  background: #2196f3;
 }
 
 .soc__icon--whithe {
-  fill: var(--secondary-color);
+  fill: #ffffff;
 }
 
 .subscribe__wrapper {
@@ -825,7 +813,7 @@ body {
   width: 358px;
   margin-right: 12px;
   padding: 15px 16px;
-  color: var(--secondary-color);
+  color: #ffffff;
   background-color: #2f303a;
   outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -860,7 +848,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .subscribe__btn {
@@ -877,12 +865,12 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe__icon {
+.btn_icon {
   margin-left: 10px;
-  fill: var(--secondary-color);
+  fill: #ffffff;
 }/*# sourceMappingURL=main.css.map */

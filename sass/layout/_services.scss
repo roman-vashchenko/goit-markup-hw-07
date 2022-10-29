@@ -1,12 +1,12 @@
 .services {
   padding-bottom: 94px;
-  background: var(--secondary-color);
+  background: $secondary-color;
 }
 
 .services__title {
   margin-bottom: 50px;
  @extend %title;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .services__list {
@@ -36,6 +36,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: $secondary-color;
   background-color: rgba(47, 48, 58, 0.8);
 }

@@ -7,7 +7,7 @@
   height: 100%;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-time) var(--transition-function), visibility var(--transition-time) var(--transition-function);
+  transition: opacity $transition-time $transition-function, visibility $transition-time $transition-function;
 }
 
 .backdrop.is-hidden {
@@ -26,9 +26,9 @@
   min-height: 581px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-time) var(--transition-function);
+  transition: transform $transition-time $transition-function;
 }
 
 .backdrop.is-hidden .modal {
@@ -49,11 +49,11 @@
   align-items: center;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--secondary-color);
-  transition: fill var(--transition-time) var(--transition-function);
+  background-color: $secondary-color;
+  transition: fill $transition-time $transition-function;
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
@@ -69,7 +69,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .form-field {
@@ -84,7 +84,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--text-color);
+    color: $text-color;
   }
   & input {
     width: 100%;
@@ -93,12 +93,12 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
-    transition: border-color var(--transition-time) var(--transition-function);
+    transition: border-color $transition-time $transition-function;
   }
   &:focus-within,
   & input:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+    fill: $accent-color;
+    border-color: $accent-color;
   }
 }
 
@@ -106,7 +106,7 @@
   position: absolute;
   top: 50%;
   left: 15px;
-  transition: fill var(--transition-time) var(--transition-function);
+  transition: fill $transition-time $transition-function;
 }
 
 .form-comment {
@@ -119,7 +119,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--text-color);
+    color: $text-color;
   }
   & textarea {
     width: 100%;
@@ -132,7 +132,7 @@
     transition: border-color var(--transition-time) var(--transition-function);
   }
   & textarea:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
   & textarea::placeholder {
     font-weight: 400;
@@ -165,24 +165,24 @@
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  border: 1px solid var(--title-text-color);
+  border: 1px solid $title-text-color;
   border-radius: 2px;
-  transition: background-color var(--transition-time) var(--transition-function), border-color var(--transition-time) var(--transition-function);
+  transition: background-color $transition-time $transition-function, border-color $transition-time $transition-function;
   .checkbox:checked + label & {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: $accent-color;
+    border-color: $accent-color;
   }
   .checkbox:checked:focus + label & {
     outline: transparent;
   }
   .checkbox:focus + label & {
-    outline: 1px solid var(--title-text-color);
+    outline: 1px solid $title-text-color;
   }
 }
 
 .icon-check {
   opacity: 0;
-  transition: opacity var(--transition-time) var(--transition-function);
+  transition: opacity $transition-time $transition-function;
   .checkbox:checked + label & {
     opacity: 1;
   }
@@ -190,7 +190,7 @@
 
 .contract {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .btn-submit-form {
@@ -207,10 +207,10 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: $secondary-color;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--transition-time) var(--transition-function), filter var(--transition-time) var(--transition-function);
+  transition: background-color $transition-time $transition-function, filter $transition-time $transition-function;
   &:hover,
   &:focus {
     background-color: #188ce8;

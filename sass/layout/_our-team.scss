@@ -1,11 +1,11 @@
 .team {
-  background: var(--background-color);
+  background: $background-color;
 }
 
 .team__title {
   margin-bottom: 50px;
   @extend %title;;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .team__list {
@@ -31,7 +31,7 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .team__position {
@@ -40,7 +40,7 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .soc {
@@ -62,12 +62,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--color-icon);
-  transition: background-color var(--transition-time) var(--transition-function), color var(--transition-time) var(--transition-function);
+  color: $color-icon;
+  transition: background-color $transition-time $transition-function, color $transition-time $transition-function;
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
+    background-color: $accent-color;
+    color: $secondary-color;
   }
 }
 
