@@ -1,6 +1,6 @@
 .customers__title {
+  @extend %title;
   margin-bottom: 50px;
-  @include title ( 700, 36px, 1.17, center, 0.03em);
   color: var(--title-text-color);
 }
 
@@ -34,4 +34,3 @@
 .coustomers__icon {
   fill: currentColor;
 }
-

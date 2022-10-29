@@ -4,7 +4,7 @@
 
 .team__title {
   margin-bottom: 50px;
-  @include title ( 700, 36px, 1.17, center, 0.03em);
+  @extend %title;;
   color: var(--title-text-color);
 }
 

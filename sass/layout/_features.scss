@@ -28,6 +28,7 @@
 
 .features__text {
   width: 270px;
-  @include features-font (1.71, 0.03em);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
