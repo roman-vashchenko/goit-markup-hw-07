@@ -614,7 +614,7 @@ body {
   height: 92px;
 }
 
-.coustomers__link {
+.customers__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -625,12 +625,12 @@ body {
   color: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.coustomers__link:hover, .coustomers__link:focus {
+.customers__link:hover, .customers__link:focus {
   border-color: #2196f3;
   color: #2196f3;
 }
 
-.coustomers__icon {
+.customers__icon {
   fill: currentColor;
 }
 
